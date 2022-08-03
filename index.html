@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Rock Paper Scissors</title>
+  </head>
+  <body class="">
+    <div class="grid grid-col-1 md:grid-cols-2 h-96">
+      <div
+        class="text-center text-lg md:text-2xl md:font-semibold"
+        id="computerContainer"
+      >
+        Computer Choice
+        <div class="text-base md:text-xl font-light" id="computerChoice"></div>
+      </div>
+      <div
+        class="text-center text-lg md:text-2xl md:font-semibold"
+        id="playerContainer"
+      >
+        Player Choice
+        <div class="text-base md:text-xl font-light" id="playerChoice"></div>
+      </div>
+    </div>
+    <div class="text-center">
+      <button
+        class="border-2 block md:inline-block my-1 mx-auto border-black bg-yellow-100 w-40 hover:duration-300 hover:ease-in hover:scale-125"
+        id="Rock"
+      >
+        Rock 
+      </button>
+      <button
+        class="border-2 block md:inline-block my-1 mx-auto border-black bg-yellow-100 w-40 hover:duration-300 hover:ease-in hover:scale-125"
+        id="Paper"
+      >
+        Paper 
+      </button>
+      <button
+        class="border-2 block md:inline-block my-1 mx-auto border-black bg-yellow-100 w-40 hover:duration-300 hover:ease-in hover:scale-125"
+        id="Scissor"
+      >
+        Scissor 
+      </button>
+    </div>
+    <div class="text-center m-16 text-2xl font-bold">
+      Result
+      <div class="font-medium text-xl m-3" id="resultDisplay"></div>
+    </div>
+    
+    <script src="./app.js"></script>
+  </body>
+</html>
